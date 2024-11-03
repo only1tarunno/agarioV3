@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Agrario</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <!-- header start here  -->
+    <header class="container px-5 font-poppins">
+        <div class="flex items-center justify-end md:justify-between py-[22px] gap-14 md:gap-0 md:border-b border-b-gray-1">
+            <div>
+                <img src="./img/logo.png" class="w-[160px] md:w-56" alt="Logo">
+            </div>
+            <div class="relative">
+                <!-- Profile Section with ID -->
+                <div id="profileSection"
+                    class="w-[44px] md:w-56 flex items-center gap-3.5 shadow-userboxshadow rounded-[60px] p-[6px] cursor-pointer"
+                    onclick="toggleDropdown()">
+                    <div><img src="./img/user.png" class="w-[44px] md:w-[54px]" alt="User"></div>
+                    <div class="hidden md:flex items-center gap-2">
+                        <h3 class="font-semibold text-black-1 text-xl">John Doe</h3>
+                        <img src="./img/dropdown.svg" alt="Dropdown">
+                    </div>
+                </div>
+    
+                <!-- Dropdown Menu -->
+                <div id="dropdownMenu"
+                    class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg hidden">
+                    <ul class="py-2">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="font-poppins">
+        <!-- Examination start here -->
+        <section class="pt-[8px] md:pt-8 lg:py-[50px] container px-5 ">
+            <div class="bg-gray-2 rounded-3xl lg:rounded-[40px]">
+                <h1
+                    class="text-center font-semibold lg:font-bold text-[26px] lg:text-[32px] xl:text-[40px] max-w-6xl mx-auto px-5 py-[30px] lg:py-[70px] capitalize">
+                    Examination analysis of your
+                    property for wind, solar and energy storage In 2 minutes to the result</h1>
+            </div>
+        </section>
+
+        <!-- wrapper  -->
+        <div>
+            <!-- Steps top start  -->
+            <div class="py-10 xl:py-[50px] max-w-[1051px] mx-auto px-5 lg:px-0">
+                <div
+                    class="flex justify-between relative max-w-[335px] md:max-w-[728px] lg:max-w-[1004px] xl:max-w-full mx-auto">
+                    <!-- start -->
+                    <div id="step1-indicator" class="step-indicator flex-1">
+                        <div class="relative">
+                            <!-- img part  -->
+                            <div
+                                class="border border-[#C7E1E0] rounded-[50%] p-1 lg:p-2 w-[38px] h-[38px] lg:w-[84px] lg:h-[84px] mx-auto">
+                                <span class="bg-green-1 rounded-[50%] w-full h-full flex items-center justify-center">
+                                    <img src="./img/checkmark.svg" class="w-[18px] lg:w-10" alt="checkmark">
+                                </span>
+
+                            </div>
+                            <!-- inner indicator  -->
+                            <div
+                                class="w-[57%] md:w-[82%] left-[72%] md:left-[59%] lg:w-[170.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[166.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-[2px] md:py-1 bg-white">
+                                <span class="inner-indicator block h-[2px] md:h-1"></span>
+                            </div>
+                        </div>
+                        <!-- step title  -->
+                        <h4
+                            class="text-center mt-4 font-semibold text-[12px] lg:text-lg text-gray-3 capitalize font-opensans">
+                            start</h4>
+                    </div>
+                    <!-- property details -->
+                    <div id="step2-indicator" class="step-indicator flex-1 ">
+                        <div class="relative">
+                            <!-- will be img part -->
+                            <div
+                                class="border border-[#C7E1E0] rounded-[50%] p-1 lg:p-2 w-[38px] h-[38px] lg:w-[84px] lg:h-[84px] mx-auto">
+                                <span
+                                    class="border border-green-1 bg-white rounded-[50%] w-full h-full flex items-center justify-center text-sm lg:text-[26px] text-green-1 font-medium lg:font-semibold">2</span>
+                            </div>
+                            <!-- inner indicator  -->
+                            <div
+                                class="w-[57%] md:w-[82%] left-[72%] md:left-[59%] lg:w-[170.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[166.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-[2px] md:py-1 bg-white">
+                                <span class="inner-indicator block h-[2px] md:h-1"></span>
+                            </div>
+                        </div>
+                        <!-- step title  -->
+                        <h4
+                            class="text-center mt-4 font-semibold text-[12px] lg:text-lg text-gray-3 capitalize font-opensans">
+                            property details</h4>
+                    </div>
+                    <!-- property selection -->
+                    <div id="step3-indicator" class="step-indicator flex-1 relative">
+                        <div class="relative">
+                            <div
+                                class="border border-[#C7E1E0] rounded-[50%] p-1 lg:p-2 w-[38px] h-[38px] lg:w-[84px] lg:h-[84px] mx-auto">
+                                <span
+                                    class="border border-green-1 bg-white rounded-[50%] w-full h-full flex items-center justify-center text-sm lg:text-[26px] text-green-1 font-medium lg:font-semibold">3</span>
+                            </div>
+                            <div
+                                class="w-[57%] md:w-[82%] left-[71%] md:left-[59%] lg:w-[170.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[166.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-[2px] md:py-1 bg-white">
+                                <span class="inner-indicator block h-[2px] md:h-1"></span>
+                            </div>
+                        </div>
+                        <h4
+                            class="text-center mt-4 font-semibold text-[12px] lg:text-lg text-gray-3 capitalize font-opensans">
+                            property
+                            selection</h4>
+                    </div>
+                    <!-- analysis result -->
+                    <div id="step4-indicator" class="step-indicator flex-1  self-end">
+                        <div
+                            class="border border-[#C7E1E0] rounded-[50%] p-1 lg:p-2 w-[38px] h-[38px] lg:w-[84px] lg:h-[84px] mx-auto">
+                            <span
+                                class="border border-green-1 bg-white rounded-[50%] w-full h-full flex items-center justify-center text-sm lg:text-[26px] text-green-1 font-medium lg:font-semibold">4</span>
+                        </div>
+                        <h4
+                            class="text-center mt-4 font-semibold text-[12px] lg:text-lg text-gray-3 capitalize font-opensans">
+                            analysis
+                            result</h4>
+                    </div>
+                    <!-- main bar  -->
+                    <span
+                        class="main-progress-bar block bg-[#D1E7E7] w-[76%] absolute top-[21%] md:top-[27%] lg:top-[33%] left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-[2px] md:h-1">
+                        <span class="block bg-green-1 w-[0%] h-full"></span>
+                    </span>
+                </div>
+            </div>
+            <!-- Steps top end -->
+
+
+            <!-- steps wrapper start  -->
+            <div class="">
+                <!-- single item start  -->
+                <div id="step1" class="step-content">
+                    <div class="lg:py-[50px] max-w-[1051px] mx-auto px-5 lg:px-0">
+                        <h2 class="text-base md:text-2xl text-black-1 font-semibold text-center">In which federal state
+                            is
+                            the
+                            property located
+                        </h2>
+                        <div
+                            class="max-w-[1051px] border border-[max-w-[1051px]] rounded-[30px] flex items-center justify-center py-8 md:py-[53px] mt-[30px] lg:mt-[60px]">
+                            <img src="./img/map.png" class="max-w-[221px] md:max-w-[457px]" alt="Map">
+                        </div>
+
+
+                    </div>
+                    <div class="py-10 lg:py-0 xl:py-[50px] text-center">
+                        <button onclick="nextStep()"
+                            class="text-white text-[22px] xl:text-3xl font-semibold px-[130px] py-[22px] lg:py-[28px] bg-green-2 hover:bg-black-1 rounded-[20px] inline-block border border-green-2">Next</button>
+                    </div>
+
+                </div>
+                <!-- single item end  -->
+                <!-- single item start  -->
+                <div id="step2" class="step-content hidden">
+                    <div class="lg:py-[50px] container px-5">
+                        <h2 class="text-base md:text-2xl text-black-1 font-semibold text-center">Which category best
+                            fits
+                            your property?
+                        </h2>
+                        <div
+                            class="flex gap-2 md:gap-5 xl:gap-8 2xl:gap-10 mt-9 lg:mt-[60px] overflow-x-scroll lg:overflow-hidden">
+                            <div
+                                class="flex-shrink-0 w-[45%] sm:w-[50%] lg:w-[23%] p-[7px] lg:p-4 pb-[6px] shadow-userboxshadow rounded-[20px] lg:rounded-[30px] border border-[#E7F2F8]">
+                                <img src="./img/arable-land.png" class="w-full rounded-2xl lg:rounded-[26px]"
+                                    alt="arable-land">
+                                <h2
+                                    class="py-[14px] lg:py-8 text-center font-semibold capitalize text-base lg:text-lg 2xl:text-2xl text-gray-3">
+                                    arable land</h2>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-[45%] sm:w-[50%] lg:w-[23%] p-[7px] lg:p-4 pb-[6px] shadow-userboxshadow rounded-[20px] lg:rounded-[30px] border border-[#E7F2F8]">
+                                <img src="./img/grassland.png" class="w-full rounded-2xl lg:rounded-[26px]"
+                                    alt="grassland">
+                                <h2
+                                    class="py-[14px] lg:py-8 text-center font-semibold capitalize text-base lg:text-lg 2xl:text-2xl text-gray-3">
+                                    grassland</h2>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-[45%] sm:w-[50%] lg:w-[23%] p-[7px] lg:p-4 pb-[6px] shadow-userboxshadow rounded-[20px] lg:rounded-[30px] border border-[#E7F2F8]">
+                                <img src="./img/wald.png" class="w-full rounded-2xl lg:rounded-[26px]" alt="wald">
+                                <h2
+                                    class="py-[14px] lg:py-8 text-center font-semibold capitalize text-base lg:text-lg 2xl:text-2xl text-gray-3">
+                                    Wald</h2>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-[45%] sm:w-[50%] lg:w-[23%] p-[7px] lg:p-4 pb-[6px] shadow-userboxshadow rounded-[20px] lg:rounded-[30px] border border-[#E7F2F8]">
+                                <img src="./img/miscellaneous.png" class="w-full rounded-2xl lg:rounded-[26px]"
+                                    alt="Miscellaneous">
+                                <h2
+                                    class="py-[14px] lg:py-8 text-center font-semibold capitalize text-base lg:text-lg 2xl:text-2xl text-gray-3">
+                                    Miscellaneous</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="py-10 lg:py-0 xl:py-[50px] max-w-[682px] mx-auto px-5">
+                        <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-[22px] text-center">
+                            <button onclick="previousStep()"
+                                class="w-full md:w-auto text-green-2 hover:text-white text-[22px] xl:text-3xl font-semibold flex-1 py-[22px] lg:py-[28px] bg-transparent hover:bg-black-1 rounded-[20px] block border border-green-2">Back</button>
+                            <button onclick="nextStep()"
+                                class="w-full md:w-auto text-white text-[22px] xl:text-3xl font-semibold flex-1 py-[22px] lg:py-[28px] bg-green-2 hover:bg-black-1 rounded-[20px] block border border-green-2">Next</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- single item end  -->
+                <!-- single item start  -->
+                <div id="step3" class="step-content hidden">
+                    <div class="lg:py-[50px] container px-5">
+                        <h2 class="text-base md:text-2xl text-black-1 font-semibold text-center">Select your parcel on
+                            the
+                            map for
+                            inspection
+                        </h2>
+                        <div class="mt-[30px] lg:mt-[60px]">
+                            <img src="./img/googlemap1.png" class="w-full" alt="Google Map">
+                        </div>
+
+
+                    </div>
+                    <div class="py-10 lg:py-0 xl:py-[50px] max-w-[682px] mx-auto px-5">
+                        <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-[22px] text-center">
+                            <button onclick="previousStep()"
+                                class="w-full md:w-auto text-green-2 hover:text-white text-[22px] xl:text-3xl font-semibold flex-1 py-[22px] lg:py-[28px] bg-transparent hover:bg-black-1 rounded-[20px] block border border-green-2">Back</button>
+                            <button onclick="nextStep()"
+                                class="w-full md:w-auto text-white text-[22px] xl:text-3xl font-semibold flex-1 py-[22px] lg:py-[28px] bg-green-2 hover:bg-black-1 rounded-[20px] block border border-green-2">Next</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- single item end  -->
+                <!-- single item start  -->
+                <div id="step4" class="step-content hidden">
+                    <div class="lg:py-[50px] container px-5">
+                        <div class="">
+                            <img src="./img/googlemap3.png" class="w-full" alt="Google Map">
+                        </div>
+                    </div>
+                    <div class="py-[50px] 2xl:pb-[150px] container px-5">
+                        <div class="shadow-userboxshadow border border-[#E7F2F8] rounded-[30px] p-5 xl:p-10">
+                            <!-- table box  -->
+                            <div
+                                class="grid grid-cols-1 lg:grid-cols-6 border border-[#C1D7E1] rounded-2xl lg:rounded-[20px]">
+                                <div class="flex flex-row lg:flex-col">
+                                    <p
+                                        class="text-gray-3 font-opensans text-[15px] xl:text-lg font-normal p-5 xl:ps-10 lg:py-[29px] border-r border-b lg:border-b-0 border-[#C1D7E1] flex-1">
+                                        Federal State
+                                    </p>
+                                    <h3
+                                        class="text-gray-3 font-opensans text-[15px] xl:text-xl font-semibold p-5 xl:ps-10 lg:py-[29px] border-b lg:border-b-0 lg:border-t lg:border-r border-[#C1D7E1] flex-1">
+                                        NRW</h3>
+                                </div>
+                                <div class="flex flex-row lg:flex-col">
+                                    <p
+                                        class="text-gray-3 font-opensans text-[15px] xl:text-lg font-normal p-5 xl:ps-10 lg:py-[29px] border-r border-b lg:border-b-0 border-[#C1D7E1] flex-1">
+                                        Community</p>
+                                    <h3
+                                        class=" tex-gray-3 font-opensans text-[15px] xl:text-xl font-semibold p-5 xl:ps-10 lg:py-[29px] border-b lg:border-b-0 lg:border-t lg:border-r border-[#C1D7E1] flex-1">
+                                        Wusthausen</h3>
+                                </div>
+                                <div class="flex flex-row lg:flex-col">
+                                    <p
+                                        class="text-gray-3 font-opensans text-[15px] xl:text-lg font-normal p-5 xl:ps-10 lg:py-[29px] border-r border-b lg:border-b-0 border-[#C1D7E1] flex-1">
+                                        District
+                                    </p>
+                                    <h3
+                                        class=" tex-gray-3 font-opensans text-[15px] xl:text-xl font-semibold p-5 xl:ps-10 lg:py-[29px] border-b lg:border-b-0 lg:border-t lg:border-r border-[#C1D7E1] flex-1">
+                                        Wusthausen</h3>
+                                </div>
+                                <div class="flex flex-row lg:flex-col">
+                                    <p
+                                        class="text-gray-3 font-opensans text-[15px] xl:text-lg font-normal p-5 xl:ps-10 lg:py-[29px] border-r border-b lg:border-b-0 border-[#C1D7E1] flex-1">
+                                        Hallway</p>
+                                    <h3
+                                        class=" tex-gray-3 font-opensans text-[15px] xl:text-xl font-semibold p-5 xl:ps-10 lg:py-[29px] border-b lg:border-b-0 lg:border-t lg:border-r border-[#C1D7E1] flex-1">
+                                        2
+                                    </h3>
+                                </div>
+                                <div class="flex flex-row lg:flex-col">
+                                    <p
+                                        class="text-gray-3 font-opensans text-[15px] xl:text-lg font-normal p-5 xl:ps-10 lg:py-[29px] border-r border-b lg:border-b-0 border-[#C1D7E1] flex-1">
+                                        Parcel Of Land</p>
+                                    <h3
+                                        class=" tex-gray-3 font-opensans text-[15px] xl:text-xl font-semibold p-5 xl:ps-10 lg:py-[29px] border-b lg:border-b-0 lg:border-t lg:border-r border-[#C1D7E1] flex-1">
+                                        36/5</h3>
+                                </div>
+                                <div class="flex flex-row lg:flex-col">
+                                    <p
+                                        class="text-gray-3 font-opensans text-[15px] xl:text-lg font-normal p-5 xl:ps-10 lg:py-[29px] border-r lg:border-r-0  border-[#C1D7E1] flex-1">
+                                        Size</p>
+                                    <h3
+                                        class="text-gray-3 font-opensans text-[15px] xl:text-xl font-semibold p-5 xl:ps-10 lg:py-[29px]  lg:border-t border-[#C1D7E1] flex-1">
+                                        15.231m2
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- bar  -->
+                            <div class="">
+                                <h2 class="text-lg lg:text-2xl text-black-1 font-semibold text-center pt-10 xl:pt-[70px] pb-5 lg:pb-10 capitalize">
+                                    The
+                                    analysis runs
+                                </h2>
+                                <div
+                                    class="bg-[#F4F8FA] py-5 lg:py-[60px] px-5 xl:px-[90px] rounded-2xl lg:rounded-[30px] grid grid-cols-1 md:grid-cols-2 gap-x-[60px] 2xl:gap-x-[130px] md:gap-y-10 gap-y-[30px] 2xl:gap-y-[60px]">
+                                    <!-- single item  -->
+                                    <div class="space-y-4 lg:space-y-5">
+                                        <p class="font-opensans font-semibold text-[15px] lg:text-lg 2xl:text-xl text-gray-3 capitalize">Property
+                                            cadastre</p>
+                                        <span class="block bg-[#B5DBD9] h-[10px] lg:h-4 rounded-[60px]">
+                                            <span class="block bg-green-1 w-1/2 h-[10px] lg:h-4 rounded-[60px]"></span>
+                                        </span>
+                                    </div>
+                                    <!-- single item  -->
+                                    <div class="space-y-4 lg:space-y-5">
+                                        <p class="font-opensans font-semibold text-[15px] lg:text-lg 2xl:text-xl text-gray-3 capitalize">Editing</p>
+                                        <span class="block bg-[#B5DBD9] h-[10px] lg:h-4 rounded-[60px]">
+                                            <span class="block bg-green-1 w-[90%] h-[10px] lg:h-4 rounded-[60px]"></span>
+                                        </span>
+                                    </div>
+                                    <!-- single item  -->
+                                    <div class="space-y-4 lg:space-y-5">
+                                        <p class="font-opensans font-semibold text-[15px] lg:text-lg 2xl:text-xl text-gray-3 capitalize">Soil
+                                            quality</p>
+                                        <span class="block bg-[#B5DBD9] h-[10px] lg:h-4 rounded-[60px]">
+                                            <span class="block bg-green-1 w-[60%] h-[10px] lg:h-4 rounded-[60px]"></span>
+                                        </span>
+                                    </div>
+                                    <!-- single item  -->
+                                    <div class="space-y-4 lg:space-y-5">
+                                        <p class="font-opensans font-semibold text-[15px] lg:text-lg 2xl:text-xl text-gray-3 capitalize">Nature and
+                                            environmental protection</p>
+                                        <span class="block bg-[#B5DBD9] h-[10px] lg:h-4 rounded-[60px]">
+                                            <span class="block bg-green-1 w-[70%] h-[10px] lg:h-4 rounded-[60px]"></span>
+                                        </span>
+                                    </div>
+                                    <!-- single item  -->
+                                    <div class="space-y-4 lg:space-y-5">
+                                        <p class="font-opensans font-semibold text-[15px] lg:text-lg 2xl:text-xl text-gray-3 capitalize">River
+                                            network &
+                                            infrastructure</p>
+                                        <span class="block bg-[#B5DBD9] h-[10px] lg:h-4 rounded-[60px]">
+                                            <span class="block bg-green-1 w-[20%] h-[10px] lg:h-4 rounded-[60px]"></span>
+                                        </span>
+                                    </div>
+                                    <!-- single item  -->
+                                    <div class="space-y-4 lg:space-y-5">
+                                        <p class="font-opensans font-semibold text-[15px] lg:text-lg 2xl:text-xl text-gray-3 capitalize">Energy trip
+                                        </p>
+                                        <span class="block bg-[#B5DBD9] h-[10px] lg:h-4 rounded-[60px]">
+                                            <span class="block bg-green-1 w-[45%] h-[10px] lg:h-4 rounded-[60px]"></span>
+                                        </span>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- single item end  -->
+
+
+
+            </div>
+            <!-- steps wrapper end -->
+            <!-- Step Content -->
+        </div>
+        <!-- wrapper  -->
+
+        <section class="lg:mt-10 mb-[50px] xl:mb-[150px] max-w-[682px] mx-auto px-5 sm:px-0">
+
+            <div
+                class="bg-gray-2 rounded-[30px] py-[30px] lg:py-[60px] text-center">
+                <h3 class="text-[32px] lg:text-[40px] font-bold text-green-1">9.300+</h3>
+                <p class="text-lg font-normal text-black-2 capitalize pt-3.5">areas examined</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer start here  -->
+    <footer class="bg-green-1 rounded-t-[20px] lg:rounded-t-[30px] font-opensans text-white">
+        <div class="container px-5">
+            <div
+                class="py-10 lg:py-20 2xl:py-[111px] flex justify-between flex-col lg:flex-row gap-10 lg:gap-8 border-b border-b-[#2C857F]">
+                <div class="w-full lg:w-1/2">
+                    <img src="./img/footerLogo.png" class="w-[180px] lg:w-[220px] 2xl:w-[300px] mx-auto lg:ml-0"
+                        alt="Footer-Logo">
+                </div>
+                <div
+                    class="w-full lg:w-1/2 flex justify-between flex-col lg:flex-row gap-[30px] text-base lg:text-lg xl:text-[22px] font-semibold">
+                    <div class="w-full lg:w-[195px] xl:w-[234px]">
+                        <ul class="space-y-[30px] lg:space-y-[30px] 2xl:space-y-[70px] text-center lg:text-start">
+                            <li><a href="#" class="hover:text-black-1">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-black-1">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-[212px] xl:w-[300px]">
+                        <ul class="space-y-[30px] lg:space-y-[30px] 2xl:space-y-[70px]">
+                            <li><a href="maito:info@agrarioenergy.com"
+                                    class="flex items-center gap-2 xl:gap-3 justify-center lg:justify-start">
+                                    <span><img src="./img/email.svg" class="w-6" alt="email"></span>
+                                    <span>info@agrarioenergy.com</span>
+                                </a></li>
+                            <li><a href="tel:+49 (0) 157 58516778"
+                                    class="flex items-center gap-2 xl:gap-3 justify-center lg:justify-start">
+                                    <span><img src="./img/call.svg" class="w-6" alt="Phone"></span>
+                                    <span>+49 (0) 157 58516778</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-10 lg:py-[30px] flex justify-between flex-col-reverse lg:flex-row gap-[30px]">
+                <div class="flex-1">
+                    <p class="text-base lg:text-xl font-light text-center lg:text-start">© 2024 Agrario Energy. All
+                        rights reserved.</p>
+                </div>
+                <div class="flex-1">
+                    <ul class="flex items-center justify-center lg:justify-end gap-[10px]">
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/instagram.svg" class="w-5" alt="Instragram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/twitter.svg" class="w-5" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/linkedin.svg" class="w-5" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/facebook.svg" class="w-5" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/dropDown.js"></script>
+    <script src="./js/step.js"></script>
+</body>
+
+</html>

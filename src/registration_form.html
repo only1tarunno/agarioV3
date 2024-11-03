@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Agrario</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <!-- header start here  -->
+    <header class="container px-5 font-poppins">
+        <div class="flex items-center justify-end md:justify-between py-[22px] gap-14 md:gap-0 md:border-b border-b-gray-1">
+            <div>
+                <img src="./img/logo.png" class="w-[160px] md:w-56" alt="Logo">
+            </div>
+            <div class="relative">
+                <!-- Profile Section with ID -->
+                <div id="profileSection"
+                    class="w-[44px] md:w-56 flex items-center gap-3.5 shadow-userboxshadow rounded-[60px] p-[6px] cursor-pointer"
+                    onclick="toggleDropdown()">
+                    <div><img src="./img/user.png" class="w-[44px] md:w-[54px]" alt="User"></div>
+                    <div class="hidden md:flex items-center gap-2">
+                        <h3 class="font-semibold text-black-1 text-xl">John Doe</h3>
+                        <img src="./img/dropdown.svg" alt="Dropdown">
+                    </div>
+                </div>
+    
+                <!-- Dropdown Menu -->
+                <div id="dropdownMenu"
+                    class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg hidden">
+                    <ul class="py-2">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="font-poppins">
+        <!-- Examination start here -->
+        <section class="pt-[8px] lg:py-[50px] container px-5 ">
+            <div class="bg-gray-2 rounded-3xl lg:rounded-[40px]">
+                <h1
+                    class="text-center font-semibold lg:font-bold text-[26px] lg:text-[32px] xl:text-[40px] max-w-[205px] lg:max-w-6xl mx-auto px-5 py-[30px] lg:py-[70px] capitalize">
+                    registration form</h1>
+            </div>
+        </section>
+
+        <!-- Form box  -->
+        <section class="py-10 lg:pt-0 xl:py-[50px] container px-5 ">
+            <div class="shadow-userboxshadow border border-[#E7F2F8] rounded-[30px] p-5 xl:p-10">
+                <form class="bg-[#F4F8FA] py-[18px] lg:py-[40px] 2xl:py-[60px] px-5 xl:px-[90px] rounded-2xl lg:rounded-[30px]">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-[58px] gap-y-6 2xl:gap-y-[60px]">
+                        <!-- First Name  -->
+                        <div class="space-y-2 lg:space-y-[10px]">
+                            <label for="firstname"
+                                class="font-opensans block text-[13px] lg:text-[17px] text-gray-3 capitalize ms-1.5">first name</label>
+                            <div class="relative">
+                                <input type="text" id="firstname"
+                                    class="border border-[#D2E2EA] rounded-xl lg:rounded-[14px] w-full font-opensans text-[15px] lg:text-xl font-semibold text-gray-3 placeholder:text-gray-3 py-[17px] lg:py-5 px-[18px] lg:px-[26px]"
+                                    placeholder="John">
+                                <div class="absolute top-1/2 -translate-y-1/2 right-[18px] lg:right-[26px]">
+                                    <img src="./img/user.svg" class="w-5 lg:w-6" alt="User">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- last Name  -->
+                        <div class="space-y-2 lg:space-y-[10px]">
+                            <label for="lastname"
+                                class="font-opensans block text-[13px] lg:text-[17px] text-gray-3 capitalize ms-1.5">last name</label>
+                            <div class="relative">
+                                <input type="text" id="lastname"
+                                    class="border border-[#D2E2EA] rounded-xl lg:rounded-[14px] w-full font-opensans text-[15px] lg:text-xl font-semibold text-gray-3 placeholder:text-gray-3 py-[17px] lg:py-5 px-[18px] lg:px-[26px]"
+                                    placeholder="Doe">
+                                <div class="absolute top-1/2 -translate-y-1/2 right-[18px] lg:right-[26px]">
+                                    <img src="./img/user.svg" class="w-5 lg:w-6" alt="User">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Email  -->
+                        <div class="space-y-2 lg:space-y-[10px]">
+                            <label for="email"
+                                class="font-opensans block text-[13px] lg:text-[17px] text-gray-3 capitalize ms-1.5">Email</label>
+                            <div class="relative">
+                                <input type="email" id="email"
+                                    class="border border-[#D2E2EA] rounded-xl lg:rounded-[14px] w-full font-opensans text-[15px] lg:text-xl font-semibold text-gray-3 placeholder:text-gray-3 py-[17px] lg:py-5 px-[18px] lg:px-[26px]"
+                                    placeholder="JohnDoe123@gmail.com">
+                                <div class="absolute top-1/2 -translate-y-1/2 right-[18px] lg:right-[26px]">
+                                    <img src="./img/email.png" class="w-5 lg:w-6" alt="User">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Phone  -->
+                        <div class="space-y-2 lg:space-y-[10px]">
+                            <label for="phone"
+                                class="font-opensans block text-[13px] lg:text-[17px] text-gray-3 capitalize ms-1.5">Phone</label>
+                            <div class="relative">
+                                <input type="tel" id="phone"
+                                    class="border border-[#D2E2EA] rounded-xl lg:rounded-[14px] w-full font-opensans text-[15px] lg:text-xl font-semibold text-gray-3 placeholder:text-gray-3 py-[17px] lg:py-5 px-[18px] lg:px-[26px]"
+                                    placeholder="+49 30 1234 5678">
+                                <div class="absolute top-1/2 -translate-y-1/2 right-[18px] lg:right-[26px]">
+                                    <img src="./img/call.png" class="w-5 lg:w-6" alt="User">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Company  -->
+                        <div class="space-y-2 lg:space-y-[10px]">
+                            <label for="Company"
+                                class="font-opensans block text-[13px] lg:text-[17px] text-gray-3 capitalize ms-1.5">Company</label>
+                            <div class="relative">
+                                <input type="text" id="Company"
+                                    class="border border-[#D2E2EA] rounded-xl lg:rounded-[14px] w-full font-opensans text-[15px] lg:text-xl font-semibold text-gray-3 placeholder:text-gray-3 py-[17px] lg:py-5 px-[18px] lg:px-[26px]"
+                                    placeholder="Deutsche Telekom">
+                                <div class="absolute top-1/2 -translate-y-1/2 right-[18px] lg:right-[26px]">
+                                    <img src="./img/company.svg" class="w-5 lg:w-6" alt="User">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Password  -->
+                        <div class="space-y-2 lg:space-y-[10px]">
+                            <label for="Password"
+                                class="font-opensans block text-[13px] lg:text-[17px] text-gray-3 capitalize ms-1.5">Password</label>
+                            <div class="relative">
+                                <input type="password" id="Password"
+                                    class="border border-[#D2E2EA] rounded-xl lg:rounded-[14px] w-full font-opensans text-[15px] lg:text-xl font-semibold text-gray-3 placeholder:text-gray-3 py-[17px] lg:py-5 px-[18px] lg:px-[26px]"
+                                    placeholder="••••••••">
+                                <div class="absolute top-1/2 -translate-y-1/2 right-[18px] lg:right-[26px]">
+                                    <img src="./img/password.svg" class="w-5 lg:w-6" alt="User">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- checkbox  -->
+                    <div class="mt-4 lg:mt-6 space-y-[18px] lg:space-y-6">
+                        <label class="flex  space-x-2 ">
+                            <input type="checkbox" class="form-checkbox rounded-[6px] h-5 w-5 accent-green-1">
+                            <span class="flex-1 font-opensans block text-sm lg:text-[17px] text-gray-3 capitalize">I accept the privacy
+                                policy</span>
+                        </label>
+                        <label class="flex  space-x-2 ">
+                            <input type="checkbox" class="form-checkbox rounded-[6px] h-5 w-5 accent-green-1">
+                            <span class="flex-1 font-opensans block text-sm lg:text-[17px] text-gray-3 capitalize">I accept the General
+                                Terms and Conditions</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- cta & btn  -->
+        <section class="pb-[50px] xl:py-20 max-w-[682px] mx-auto px-5 ">
+            <div class="text-center">
+                    <a href="#"
+                        class="w-full md:w-auto text-white text-[22px] xl:text-3xl font-semibold flex-1 py-[22px] xl:py-[28px] bg-green-2 hover:bg-black-1 rounded-[20px] block border border-green-2 capitalize">create account</a>
+            </div>
+            <p
+                class="lg:mb-10 2xl:mb-[70px] mt-10 2xl:mt-20 text-center font-opensans font-normal text-base lg:text-[22px] 2xl:text-[28px] text-black-2 capitalize">
+                Already have an account?
+                <a href="#" class="text-green-1 hover:text-black-1 font-semibold">Sing in</a>
+            </p>
+        </section>
+
+    </main>
+
+    <!-- footer start here  -->
+    <footer class="bg-green-1 rounded-t-[20px] lg:rounded-t-[30px] font-opensans text-white">
+        <div class="container px-5">
+            <div
+                class="py-10 lg:py-20 2xl:py-[111px] flex justify-between flex-col lg:flex-row gap-10 lg:gap-8 border-b border-b-[#2C857F]">
+                <div class="w-full lg:w-1/2">
+                    <img src="./img/footerLogo.png" class="w-[180px] lg:w-[220px] 2xl:w-[300px] mx-auto lg:ml-0"
+                        alt="Footer-Logo">
+                </div>
+                <div
+                    class="w-full lg:w-1/2 flex justify-between flex-col lg:flex-row gap-[30px] text-base lg:text-lg xl:text-[22px] font-semibold">
+                    <div class="w-full lg:w-[195px] xl:w-[234px]">
+                        <ul class="space-y-[30px] lg:space-y-[30px] 2xl:space-y-[70px] text-center lg:text-start">
+                            <li><a href="#" class="hover:text-black-1">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-black-1">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-[212px] xl:w-[300px]">
+                        <ul class="space-y-[30px] lg:space-y-[30px] 2xl:space-y-[70px]">
+                            <li><a href="maito:info@agrarioenergy.com"
+                                    class="flex items-center gap-2 xl:gap-3 justify-center lg:justify-start">
+                                    <span><img src="./img/email.svg" class="w-6" alt="email"></span>
+                                    <span>info@agrarioenergy.com</span>
+                                </a></li>
+                            <li><a href="tel:+49 (0) 157 58516778"
+                                    class="flex items-center gap-2 xl:gap-3 justify-center lg:justify-start">
+                                    <span><img src="./img/call.svg" class="w-6" alt="Phone"></span>
+                                    <span>+49 (0) 157 58516778</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-10 lg:py-[30px] flex justify-between flex-col-reverse lg:flex-row gap-[30px]">
+                <div class="flex-1">
+                    <p class="text-base lg:text-xl font-light text-center lg:text-start">© 2024 Agrario Energy. All
+                        rights reserved.</p>
+                </div>
+                <div class="flex-1">
+                    <ul class="flex items-center justify-center lg:justify-end gap-[10px]">
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/instagram.svg" class="w-5" alt="Instragram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/twitter.svg" class="w-5" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/linkedin.svg" class="w-5" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/facebook.svg" class="w-5" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/dropDown.js"></script>
+
+</body>
+
+</html>

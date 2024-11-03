@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Agrario</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <!-- header start here  -->
+    <header class="container px-5 font-poppins">
+        <div class="flex items-center justify-end md:justify-between py-[22px] gap-14 md:gap-0 md:border-b border-b-gray-1">
+            <div>
+                <img src="./img/logo.png" class="w-[160px] md:w-56" alt="Logo">
+            </div>
+            <div class="relative">
+                <!-- Profile Section with ID -->
+                <div id="profileSection"
+                    class="w-[44px] md:w-56 flex items-center gap-3.5 shadow-userboxshadow rounded-[60px] p-[6px] cursor-pointer"
+                    onclick="toggleDropdown()">
+                    <div><img src="./img/user.png" class="w-[44px] md:w-[54px]" alt="User"></div>
+                    <div class="hidden md:flex items-center gap-2">
+                        <h3 class="font-semibold text-black-1 text-xl">John Doe</h3>
+                        <img src="./img/dropdown.svg" alt="Dropdown">
+                    </div>
+                </div>
+    
+                <!-- Dropdown Menu -->
+                <div id="dropdownMenu"
+                    class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg hidden">
+                    <ul class="py-2">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="font-poppins">
+        <!-- Examination start here -->
+        <section class="pt-[8px] md:pt-8 lg:py-[50px] container px-5 ">
+            <div class="bg-gray-2 rounded-3xl lg:rounded-[40px]">
+                <h1
+                    class="text-center font-semibold lg:font-bold text-[26px] lg:text-[32px] xl:text-[40px] max-w-6xl mx-auto px-5 py-[30px] lg:py-[70px] capitalize">
+                    Examination analysis of your
+                    property for wind, solar and energy storage In 2 minutes to the result</h1>
+            </div>
+        </section>
+        <!-- step start here  -->
+        <section class="py-10 lg:pt-0 xl:py-[50px] max-w-[1051px] mx-auto px-5 lg:px-0">
+            <div
+                class="flex justify-between relative max-w-[335px] md:max-w-[728px] lg:max-w-[1004px] xl:max-w-full mx-auto">
+                <!-- start -->
+                <div class="flex-1 ">
+                    <div class="relative">
+                        <div
+                            class="border border-[#C7E1E0] rounded-[50%] p-1 lg:p-2 w-[38px] h-[38px] lg:w-[84px] lg:h-[84px] mx-auto">
+                            <span class="bg-green-1 rounded-[50%] w-full h-full flex items-center justify-center">
+                                <img src="./img/checkmark.svg" class="w-[18px] lg:w-10" alt="checkmark">
+                            </span>
+
+                        </div>
+                        <div
+                            class="w-[57%] md:w-[82%] left-[72%] md:left-[59%] lg:w-[170.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[166.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-[2px] md:py-1 bg-white">
+                            <span class="block h-[2px] md:h-1 bg-green-1"></span>
+                        </div>
+                    </div>
+                    <h4
+                        class="text-center mt-4 font-semibold text-[12px] lg:text-lg text-gray-3 capitalize font-opensans">
+                        start</h4>
+                </div>
+                <!-- property details -->
+                <div class="flex-1 ">
+                    <div class="relative">
+                        <div
+                            class="border border-[#C7E1E0] rounded-[50%] p-1 lg:p-2 w-[38px] h-[38px] lg:w-[84px] lg:h-[84px] mx-auto">
+                            <span class="bg-green-1 rounded-[50%] w-full h-full flex items-center justify-center">
+                                <img src="./img/checkmark.svg" class="w-[18px] lg:w-10" alt="checkmark">
+                            </span>
+
+                        </div>
+                        <div
+                            class="w-[57%] md:w-[82%] left-[72%] md:left-[59%] lg:w-[170.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[166.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-[2px] md:py-1 bg-white">
+                            <span class="block h-[2px] md:h-1 bg-green-1"></span>
+                        </div>
+                    </div>
+                    <h4
+                        class="text-center mt-4 font-semibold text-[12px] lg:text-lg text-gray-3 capitalize font-opensans">
+                        property details</h4>
+                </div>
+                <!-- property selection -->
+                <div class="flex-1 relative">
+                    <div class="relative">
+                        <div
+                            class="border border-[#C7E1E0] rounded-[50%] p-1 lg:p-2 w-[38px] h-[38px] lg:w-[84px] lg:h-[84px] mx-auto">
+                            <span class="bg-green-1 rounded-[50%] w-full h-full flex items-center justify-center">
+                                <img src="./img/checkmark.svg" class="w-[18px] lg:w-10" alt="checkmark">
+                            </span>
+
+                        </div>
+                        <div
+                            class="w-[57%] md:w-[82%] left-[71%] md:left-[59%] lg:w-[170.5px] xl:w-[182.5px] absolute top-1/2 lg:left-[166.5px] xl:left-[171.5px] -translate-y-1/2 z-10 border-t border-b border-[#C7E1E0] py-[2px] md:py-1 bg-white">
+                            <span class="block h-[2px] md:h-1 bg-[#D1E7E7]"></span>
+                        </div>
+                    </div>
+                    <h4
+                        class="text-center mt-4 font-semibold text-[12px] lg:text-lg  text-green-1 capitalize font-opensans">
+                        property
+                        selection</h4>
+                </div>
+                <!-- analysis result -->
+                <div class="flex-1  self-end">
+                    <div
+                        class="border border-[#C7E1E0] rounded-[50%] p-1 lg:p-2 w-[38px] h-[38px] lg:w-[84px] lg:h-[84px] mx-auto">
+                        <span
+                            class="border border-green-1 bg-white rounded-[50%] w-full h-full flex items-center justify-center text-sm lg:text-[26px] text-green-1 font-medium lg:font-semibold">4</span>
+                    </div>
+                    <h4
+                        class="text-center mt-4 font-semibold text-[12px] lg:text-lg text-gray-3 capitalize font-opensans">
+                        analysis
+                        result</h4>
+                </div>
+
+                <span
+                    class="block bg-[#D1E7E7] w-[76%] absolute top-[21%] md:top-[27%] lg:top-[33%] left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-[2px] md:h-1">
+                    <span class="block bg-green-1 w-[65%] h-full"></span>
+                </span>
+            </div>
+
+        </section>
+        <!-- img box  -->
+        <section class="xl:py-[50px] container px-5">
+            <h2 class="text-base md:text-2xl text-black-1 font-semibold text-center">Select your parcel on the map for
+                inspection
+            </h2>
+            <div class="mt-[30px] 2xl:mt-[60px]">
+                <img src="./img/googlemap1.png" class="w-full" alt="Google Map">
+            </div>
+
+
+        </section>
+        <!-- cta & btn  -->
+        <section class="py-10 lg:py-[50px] max-w-[682px] mx-auto px-5">
+            <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-[22px] text-center">
+                <a href="#"
+                    class="w-full md:w-auto text-green-2 hover:text-white text-[22px] xl:text-3xl font-semibold flex-1 py-[22px] xl:py-[28px] bg-transparent hover:bg-black-1 rounded-[20px] block border border-green-2 capitalize">Back</a>
+                <a href="#"
+                    class="w-full md:w-auto text-white text-[22px] xl:text-3xl font-semibold flex-1 py-[22px] xl:py-[28px] bg-green-2 hover:bg-black-1 rounded-[20px] block border border-green-2 capitalize">Next</a>
+            </div>
+            <div
+                class="bg-gray-2 rounded-[30px] py-[30px] lg:py-[60px] text-center mt-10 mb-[10px] 2xl:mt-[90px] 2xl:mb-[100px]">
+                <h3 class="text-[32px] lg:text-[40px] font-bold text-green-1">9.300+</h3>
+                <p class="text-lg font-normal text-black-2 capitalize pt-3.5">areas examined</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer start here  -->
+    <footer class="bg-green-1 rounded-t-[20px] lg:rounded-t-[30px] font-opensans text-white">
+        <div class="container px-5">
+            <div
+                class="py-10 lg:py-20 2xl:py-[111px] flex justify-between flex-col lg:flex-row gap-10 lg:gap-8 border-b border-b-[#2C857F]">
+                <div class="w-full lg:w-1/2">
+                    <img src="./img/footerLogo.png" class="w-[180px] lg:w-[220px] 2xl:w-[300px] mx-auto lg:ml-0"
+                        alt="Footer-Logo">
+                </div>
+                <div
+                    class="w-full lg:w-1/2 flex justify-between flex-col lg:flex-row gap-[30px] text-base lg:text-lg xl:text-[22px] font-semibold">
+                    <div class="w-full lg:w-[195px] xl:w-[234px]">
+                        <ul class="space-y-[30px] lg:space-y-[30px] 2xl:space-y-[70px] text-center lg:text-start">
+                            <li><a href="#" class="hover:text-black-1">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-black-1">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full lg:w-[212px] xl:w-[300px]">
+                        <ul class="space-y-[30px] lg:space-y-[30px] 2xl:space-y-[70px]">
+                            <li><a href="maito:info@agrarioenergy.com"
+                                    class="flex items-center gap-2 xl:gap-3 justify-center lg:justify-start">
+                                    <span><img src="./img/email.svg" class="w-6" alt="email"></span>
+                                    <span>info@agrarioenergy.com</span>
+                                </a></li>
+                            <li><a href="tel:+49 (0) 157 58516778"
+                                    class="flex items-center gap-2 xl:gap-3 justify-center lg:justify-start">
+                                    <span><img src="./img/call.svg" class="w-6" alt="Phone"></span>
+                                    <span>+49 (0) 157 58516778</span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-10 lg:py-[30px] flex justify-between flex-col-reverse lg:flex-row gap-[30px]">
+                <div class="flex-1">
+                    <p class="text-base lg:text-xl font-light text-center lg:text-start">© 2024 Agrario Energy. All
+                        rights reserved.</p>
+                </div>
+                <div class="flex-1">
+                    <ul class="flex items-center justify-center lg:justify-end gap-[10px]">
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/instagram.svg" class="w-5" alt="Instragram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/twitter.svg" class="w-5" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/linkedin.svg" class="w-5" alt="linkedin">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="border border-[#E8EEF2] hover:border-black-1 inline-block p-3 rounded-[50%] hover:bg-black-1">
+                                <img src="./img/facebook.svg" class="w-5" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/dropDown.js"></script>
+</body>
+
+</html>

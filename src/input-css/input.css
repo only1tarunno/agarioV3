@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html tag style  */
+@layer base {
+}
+
+/* layer style to add multiple class */
+@layer components {
+}
+
+/* custom style */
+@layer utilities {
+}
+
+ .inner-indicator {
+    background-color: #D1E7E7;
+    /* Inner circle color for completed step */
+}
+ .inner-indicatorbg {
+    background-color: #206F6A;
+    /* Inner circle color for completed step */
+}
